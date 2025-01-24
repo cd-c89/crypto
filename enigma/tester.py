@@ -77,11 +77,11 @@ if __name__ == "__main__":
     result = subprocess.run(["gcc", "enigma.c", "-o", "enigma.out"])
     # check file exists
     if not os.path.isfile("enigma.out"):
-        printf("Compilation failed.")
+        print("Compilation failed.")
         exit()
     result = subprocess.check_output(["head", "-c", "4", "enigma.out"])
     if not "ELF" in str(result)[1:]:
-        printf("Executable not valid.")
+        print("Executable not valid.")
         exit()
 
     ## Check executable output
@@ -90,7 +90,7 @@ if __name__ == "__main__":
     secret = enigma(sample)
     result = subprocess.check_output(["./enigma.out", sample])
     if not "HELLOWORLD" in str(result):
-        printf("Sample input incorrectly/not descrypted.")
+        print("Sample input incorrectly/not descrypted.")
         exit()
 
     import random
