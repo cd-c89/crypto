@@ -11,6 +11,5 @@
 uint64_t bigadd(uint64_t *in0, uint64_t *in1, uint64_t *sum); 
 uint64_t bigsub(uint64_t *min, uint64_t *sub, uint64_t *dif); 
 uint64_t bigmul(uint64_t *in0, uint64_t *in1, uint64_t *out); 
-uint64_t bigdiv(uint64_t *num, uint64_t *den, uint64_t *quo, uint64_t *rem); 
 uint64_t bigquo(uint64_t *num, uint64_t *den, uint64_t *quo);
 uint64_t bigrem(uint64_t *num, uint64_t *den, uint64_t *rem);
