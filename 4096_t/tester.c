@@ -1,3 +1,4 @@
+
 #include <stdio.h>
 #include <stdlib.h>
 #include "4096_t.h"
@@ -6,6 +7,7 @@
 uint64_t bigh2i(char *h, uint64_t *n) {
 	size_t l, i = 0, o; /* len, index, offset */
 	memset(n, 0, BYTES);
+	h += 2;
 	l = strlen(h);
 	o = l - 16;
 	while (l > o) {
@@ -14,7 +16,7 @@ uint64_t bigh2i(char *h, uint64_t *n) {
 		i++;
 		o -= 16;
 	}
-	n[i] = strtol(h, NULL, 16);
+	sscanf(h, "%lx", &n[i]);
 	return 0;
 }
 
