@@ -15,7 +15,7 @@ if not "ELF" in str(result)[1:]:
     exit()
 import random
 bigone = random.randint(2 ** 1024, 2 ** 2047)
-bigtwo = random.randint(2 ** 1024, 2 ** 2047)
+bigtwo = random.randint(2 ** 1024, 2 ** random.randint(1025,2047))
 hexone = hex(bigone)
 hextwo = hex(bigtwo)
 from operator import add, sub, mul, floordiv as quo, mod as rem
