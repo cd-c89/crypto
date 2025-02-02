@@ -33,7 +33,6 @@ unsigned rotate(unsigned a, unsigned b) {
     unsigned i;
     u2b(a, buf[0]);
     for (i = 0; i < S; i++) { buf[1][i] = buf[0][(i + b) % S]; }
-    printf("%02x %b\n=? %b\n ==%b\n\n", b, a, b2u(buf[1]), ROTATE(a,b));
     return b2u(buf[1]);
 }
 
