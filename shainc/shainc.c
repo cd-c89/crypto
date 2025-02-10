@@ -54,5 +54,8 @@ void printa(uint32_t *a, size_t l) {
 
 /* main */
 int main(int argc, char *argv[]) {
-    return 0;
+    	if (argc == argv[0][0]) {
+		return 0;
+	}
+	return 0;
 }
