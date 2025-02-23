@@ -26,4 +26,5 @@ hd = "-----BEGIN"
 ft = "-----END"
 tl = " UNSAFE PRIVATE KEY-----\n"
 open("unsafe.bad", "w").write(f"{hd}{tl}{n:x}\n{e:x}\n{d:x}\n{ft}{tl}")
+tl = " UNSAFE PUBLIC KEY-----\n"
 open("unsafe.pub", "w").write(f"{hd}{tl}{n:x}\n{e:x}\n{ft}{tl}")
