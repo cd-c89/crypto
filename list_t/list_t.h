@@ -12,7 +12,7 @@
 #include <stdint.h>
 #include <stdlib.h>
 
-// Imlistement booleans
+// Implement booleans
 
 #define TRUE 1
 #define FALSE 0
