@@ -1,6 +1,6 @@
 // list_t.c
 
-// imlistements functions in list_t.h
+// implements functions in list_t.h
 
 #include "list_t.h"
 
