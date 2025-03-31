@@ -3,8 +3,8 @@
 /* declares functions in list_t.c */
 
 /* This prevents double-inclusions */
-#ifndef PLIST
-#define PLIST
+#ifndef LIST_T
+#define LIST_T
 
 /* Some useful librarys */
 
