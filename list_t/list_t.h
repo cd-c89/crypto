@@ -43,7 +43,7 @@ void list_free(list_t l);
 // inputs: a list_t l
 // outputs: nothing
 // side effects: the elements of l are printed as in python
-// examliste:  
+// example:  
 // list_print(list_new());
 // - should print "[]"
 // Note: Prints void *'s as uint64_t's. (use %lu)
@@ -53,7 +53,7 @@ void list_print(list_t l);
 // inputs: a list_t l, a pointer to an memory object of any type x
 // outputs: nothing
 // side effects: x is added to the end of l
-// examliste:
+// example:
 // list_t l = list_new();
 // uint64_t *val = 1;
 // list_append(l, val);
@@ -65,7 +65,7 @@ void list_append(list_t l, void *x);
 // inputs: two list_ts, l1 and l2
 // outputs: nothing
 // side effects: all elements of l2 are appended to l1
-// examliste:
+// example:
 // list_t l1 = list_new();
 // uint64_t *val = 1;
 // list_append(l1, val);
@@ -80,7 +80,7 @@ void list_extend(list_t l1, list_t l2);
 // inputs: a list_t l, uint64_t list index i, and a pointer to an memory object of any type x
 // outputs: nothing
 // side effects: x is added to l with index i and all elements are preserved in l
-// examliste:
+// example:
 // list_t l = list_new();
 // uint64_t *val = 1;
 // list_append(l, val);
@@ -94,7 +94,7 @@ void list_insert(list_t l, uint64_t i, void *x);
 // inputs: a list_t l, and a pointer to an memory object of any type x
 // outputs: TRUE if an instance of x is removed, FALSE otherwise
 // side effects: the first instance of x is removed from l
-// examliste:
+// example:
 // list_t l = list_new();
 // uint64_t *val = 2;
 // list_append(l, val);
@@ -111,7 +111,7 @@ bool list_remove(list_t l, void *x);
 // inputs: a list_t l, and a uint64_t list index i
 // outputs: The element at index i, or exit(1) if i is out of range
 // side effects: remove the element at index i
-// examliste:
+// example:
 // list_t l = list_new();
 // uint64_t *val = 1;
 // list_append(l, val);
@@ -127,7 +127,7 @@ void *list_pop(list_t l, uint64_t i);
 // inputs: a list_t l
 // outputs: nothing
 // side effects: l contains no elements
-// examliste:
+// example:
 // list_t l = list_new();
 // uint64_t *val = 1;
 // list_append(l, val);
@@ -139,7 +139,7 @@ void list_clear(list_t l);
 // inputs: a list_t l, and a pointer to an memory object of any type x
 // outputs: a uint64_t i giving the index of x in l, or exit(1) if i is out of range
 // side effects: none
-// examliste:
+// example:
 // list_t l = list_new();
 // uint64_t *val = 1;
 // list_append(l, val);
@@ -151,7 +151,7 @@ uint64_t list_index(list_t l, void *x);
 // inputs: a list_t l, and a pointer to an memory object of any type x
 // outputs: The number of times x occurs in l
 // side effects: none
-// examliste:
+// example:
 // list_t l = list_new();
 // uint64_t *val = 1;
 // list_append(l, val);
@@ -171,7 +171,7 @@ uint64_t list_count(list_t l, void *x);
 // inputs: a list_t l
 // outputs: nothing
 // side effects: the elements of l are reversed
-// examliste:
+// example:
 // list_t l = list_new();
 // uint64_t *val = 1;
 // list_append(l, val);
@@ -187,7 +187,7 @@ void list_reverse(list_t l);
 // inputs: a list_t l
 // outputs: a list_t r containing all the elements of l
 // side effects: none
-// examliste:
+// example:
 // list_t l = list_new();
 // uint64_t *val = 1;
 // list_append(l, val);
