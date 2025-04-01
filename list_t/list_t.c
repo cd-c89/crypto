@@ -4,11 +4,7 @@
 
 #include "list_t.h"
 
-struct list_t_struct
-{
-    void *data;
-    list_t next;
-};
+struct list_t_struct {} ;
 
 list_t list_new()
 {
