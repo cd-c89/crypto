@@ -29,7 +29,7 @@ void list_extend(list_t l1, list_t l2)
     return;
 }
 
-void list_insert(list_t l, uint64_t i, void *x)
+void list_insert(list_t l, size_t i, void *x)
 {
     return;
 }
@@ -39,7 +39,7 @@ bool list_remove(list_t l, void *x)
     return FALSE;
 }
 
-void *list_pop(list_t l, uint64_t i)
+void *list_pop(list_t l, size_t i)
 {
     return NULL;
 }
