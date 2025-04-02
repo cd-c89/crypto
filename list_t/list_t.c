@@ -4,8 +4,6 @@
 
 #include "list_t.h"
 
-struct list_t_struct {} ;
-
 list_t list_new()
 {
     return NULL;
