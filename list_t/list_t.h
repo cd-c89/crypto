@@ -26,7 +26,7 @@ typedef uint64_t bool;
  None returns are of type void
  */
 
-typedef (void *) list_t; /* change this line */
+typedef void **list_t; /* change this line */
 
 /*
  _: New (a la Python __init__)
