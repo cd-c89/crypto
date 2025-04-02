@@ -21,12 +21,12 @@ typedef uint64_t bool;
 /* Notes:
 
  List elements are of type void *
- List indices are of type uint64_t
+ List indices are of type size_t
  Success/failure returns are of type bool
  None returns are of type void
  */
 
-typedef struct list_t_struct *list_t;
+typedef (void *) list_t; /* change this line */
 
 /*
  _: New (a la Python __init__)
@@ -90,7 +90,7 @@ void list_extend(list_t l1, list_t l2);
 
 /*
  2: Insert
- inputs: a list_t l, uint64_t list index i, and a pointer to an memory object of any type x
+ inputs: a list_t l, size_t list index i, and a pointer to an memory object of any type x
  outputs: nothing
  side effects: x is added to l with index i and all elements are preserved in l
  example:
@@ -102,7 +102,7 @@ void list_extend(list_t l1, list_t l2);
  list_print(l);
  - should print "[2, 1]"
  */
-void list_insert(list_t l, uint64_t i, void *x);
+void list_insert(list_t l, size_t i, void *x);
 
 /*
  3: Remove
@@ -125,7 +125,7 @@ bool list_remove(list_t l, void *x);
 
 /*
  4: Pop
- inputs: a list_t l, and a uint64_t list index i
+ inputs: a list_t l, and a size_t list index i
  outputs: The element at index i, or exit(1) if i is out of range
  side effects: remove the element at index i
  example:
@@ -139,7 +139,7 @@ bool list_remove(list_t l, void *x);
  list_print(l);
  - should print "[1, 2]" then "2" then "[1]"
  */
-void *list_pop(list_t l, uint64_t i);
+void *list_pop(list_t l, size_t i);
 
 /*
  5: Clear
