@@ -1,4 +1,4 @@
-CC = gcc # or clang
+CC = gcc # or clang 
 CFLAGS = -std=c89 -Wall -Wextra -Werror -Wpedantic -O
 OUTPUT = -o tester
 
