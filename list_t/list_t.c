@@ -49,7 +49,7 @@ void list_clear(list_t l)
     return;
 }
 
-uint64_t list_index(list_t l, void *x)
+size_t list_index(list_t l, void *x)
 {
     return -1;
 }
