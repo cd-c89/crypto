@@ -158,7 +158,7 @@ void list_clear(list_t l);
 /*
  6: Index
  inputs: a list_t l, and a pointer to an memory object of any type x
- outputs: a uint64_t i giving the index of x in l, or exit(1) if i is out of range
+ outputs: a size_t i giving the index of x in l, or exit(1) if x is not in l.
  side effects: none
  example:
  list_t l = list_new();
@@ -167,7 +167,7 @@ void list_clear(list_t l);
  printf("%d\n", index(l, val)));
  - should print "0"
  */
-uint64_t list_index(list_t l, void *x);
+size_t list_index(list_t l, void *x);
 
 /*
  7: Count
