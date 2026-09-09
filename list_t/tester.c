@@ -1,4 +1,4 @@
-/* autograder.c */
+/* tester.c */
 
 /* tests list_t.c functionality */
 
