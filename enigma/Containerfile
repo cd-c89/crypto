@@ -2,6 +2,6 @@ FROM alpine
 
 RUN apk add gcc libc-dev python3 curl
 
-RUN curl https://raw.githubusercontent.com/cd-c89/crypto/main/enigma/tester.py -o tester.py
+RUN curl https://raw.githubusercontent.com/cd-c89/sysinc/main/enigma/tester.py -o tester.py
 
 COPY enigma.c .
